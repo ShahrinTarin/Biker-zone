@@ -11,6 +11,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <!-- tailwind cdn daisyUI cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +28,8 @@
             "bike-primary": "#E76F51"
           },
           fontFamily: {
-            manrope: ["Poppins", 'serif'],
+            poppins: ["Poppins", 'serif'],
+            inter: ["inter", 'serif']
           },
         },
       },
@@ -31,7 +37,7 @@
   </script>
 </head>
 
-<body>
+<body class="font-poppins">
   <!-- header section  -->
   <header class="md:container mx-auto">
     <nav>
@@ -225,10 +231,12 @@
 
     </section>
 
+    <!-- client section  -->
     <section class="mb-36 max-w-[1170px] mx-auto">
       <h1 class="text-4xl font-bold mb-16 text-center">Happy <span class="text-[#E76F51]">Clients says</span></h1>
       <!-- card container  -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10 md:gap-x-0 md:gap-y-4 lg:gap-3">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10 md:gap-x-0 md:gap-y-4 lg:gap-3">
         <!-- card1  -->
         <div class="card bg-base-100 w-96 border border-[#DEDEDE] rounded-none max-w-[320px]">
           <figure class="px-10 pt-10">
@@ -243,7 +251,7 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked"/>
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
             <small class="font-bold text-[#23A6F0] text-sm">Regina Miles</small>
@@ -298,7 +306,108 @@
 
     </section>
 
+
+    <!-- Faq section  -->
+    <section class="mb-36 md:container mx-auto">
+      <div class="mb-16">
+        <h1 class="text-center text-2xl md:text-4xl font-bold text-gray-700 mb-5">Frequently Asked Any <span
+            class="text-[#E76F51]">Questions</span>
+        </h1>
+      </div>
+
+      <div class="font-inter">
+        <div class="hero ">
+          <div class="hero-content md:container mx-auto flex-col lg:flex-row-reverse gap-10">
+            <div class="space-y-3">
+              <div class="collapse collapse-arrow rounded-md p-7 border border-[#D5E5FB]">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-extrabold">What are the most important things I should <br>
+                  know about riding a bike??</div>
+                <div class="collapse-content">
+                  <p class="text-xs md:text-sm text-gray-500">Safety First! Always obey the rules of the road. Obey all
+                    traffic <br> signals, signs, and laws. Get in the mindset of “driving” your <br> bike—not just
+                    “riding” your bike. This will help you be a more <br> focused and legally compliant bike rider. </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-[#D5E5FB] rounded-md p-7">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-extrabold">How can I tell if my helmet is old and I need a <br>
+                  new one?</div>
+                <div class="collapse-content">
+                  <p class="text-xs md:text-sm text-gray-500 font-poppins">Safety First! Always obey the rules of the
+                    road. Obey all traffic <br> signals, signs, and laws. Get in the mindset of “driving” your <br>
+                    bike—not just “riding” your bike. This will help you be a more <br> focused and legally compliant
+                    bike rider.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-[#D5E5FB] rounded-md p-7">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-extrabold">My bike has been in storage is it safe to ride?</div>
+                <div class="collapse-content">
+                  <p class="text-xs md:text-sm text-gray-500 font-poppins">Safety First! Always obey the rules of the
+                    road. Obey all traffic <br> signals, signs, and laws. Get in the mindset of “driving” your <br>
+                    bike—not just “riding” your bike. This will help you be a more <br> focused and legally compliant
+                    bike rider.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-[#D5E5FB] rounded-md p-7">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-extrabold">What rules should I follow when riding my bike?</div>
+                <div class="collapse-content">
+                  <p class="text-xs md:text-sm text-gray-500 font-poppins">Safety First! Always obey the rules of the
+                    road. Obey all traffic <br> signals, signs, and laws. Get in the mindset of “driving” your <br>
+                    bike—not just “riding” your bike. This will help you be a more <br> focused and legally compliant
+                    bike rider.</p>
+                </div>
+              </div>
+
+            </div>
+            <img src="./images/others/faq.png" class="max-w-full" />
+
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
+
+  <!-- footer section  -->
+  <footer class=" bg-slate-950 flex items-center justify-center">
+
+    <div class="footer text-neutral-content md:gap-7 p-10 md:container mx-auto justify-between">
+      <!-- right side foot  -->
+      <div class="flex gap-2 flex-col">
+        <div class="flex gap-4 text-base">
+          <p>Download Now</p>
+          <p>License</p>
+        </div>
+        <div class="flex-col flex gap-4 md:flex-row mb-6 text-base">
+          <p>About</p>
+          <p>Features</p>
+          <p>Careers</p>
+          <p>Pricing</p>
+          <p>Help</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div>
+          <p class="text-xs text-[#D9DBE1]">© 2020 bike. All rights reserved</p>
+        </div>
+      </div>
+      <!-- left side foot  -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-[#D9DBE1] text-xl font-medium">Get the App</h1>
+        <div class="flex flex-col gap-4">
+          <a>
+            <img src="./images/others/ios.png" alt="" class="w-2/3 cursor-pointer">
+          </a>
+          <a>
+            <img src="./images/others/android.png" alt="" class="w-2/3 cursor-pointer">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 
 </body>
